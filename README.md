@@ -15,11 +15,11 @@
 
 # Overview
 
-This repository presents a Machine Learning solution for predicting student failure in first-semester Mathematics as an early indicator of school dropout risk.
+This repository presents a Machine Learning study for predicting student failure in first-semester Mathematics as an early indicator of school dropout risk.
 
-The project applies data preprocessing, class balancing, feature selection and supervised learning algorithms to identify students at higher risk, supporting early educational interventions and evidence-based decision making.
+The project applies data preprocessing, class balancing (SMOTE), feature selection and supervised learning algorithms to identify students at higher academic risk, supporting evidence-based educational decision making.
 
-This work is based on a peer-reviewed scientific publication published in the journal **Research, Society and Development (2025)**.
+The repository documents a peer-reviewed scientific publication published in **Research, Society and Development (2025)**.
 
 ---
 
@@ -33,11 +33,10 @@ This work is based on a peer-reviewed scientific publication published in the jo
 - Technologies
 - Machine Learning Models
 - Results
-- Repository Structure
-- How to Run
+- Repository Contents
+- Data Availability
 - Scientific Publication
 - Citation
-- Future Improvements
 - Author
 - License
 
@@ -45,18 +44,18 @@ This work is based on a peer-reviewed scientific publication published in the jo
 
 # Problem
 
-School dropout is one of the main challenges faced by educational institutions.
+School dropout remains one of the major challenges faced by educational institutions.
 
-Research has shown that poor academic performance during the first semester is one of the strongest indicators associated with future dropout.
+Previous studies indicate that poor academic performance during the first semester is one of the strongest indicators associated with future dropout.
 
-This project aims to identify students at risk before academic difficulties become irreversible.
+This work investigates whether Machine Learning techniques can identify students at higher academic risk and support early pedagogical interventions.
 
 ---
 
 # Objectives
 
 - Predict student failure in first-semester Mathematics.
-- Support early pedagogical interventions.
+- Support early educational interventions.
 - Compare supervised Machine Learning algorithms.
 - Evaluate predictive performance using statistical metrics.
 - Demonstrate the application of Educational Data Mining techniques.
@@ -65,17 +64,17 @@ This project aims to identify students at risk before academic difficulties beco
 
 # Dataset
 
-The dataset contains anonymized historical academic records from the Federal Institute of Education, Science and Technology of Ceará (IFCE).
+The study uses anonymized academic records from the Federal Institute of Education, Science and Technology of Ceará (IFCE).
 
 ### Characteristics
 
 - 468 student records
 - Six technical education programs
-- Admission years from 2018 to 2020
+- Admission years: 2018–2020
 - Anonymous educational data
 - Binary classification
 
-Target variable:
+Target classes:
 
 - ✅ Pass
 - ❌ Fail
@@ -84,7 +83,7 @@ Target variable:
 
 # Machine Learning Pipeline
 
-The complete workflow includes:
+The methodology consists of:
 
 1. Data Collection
 2. Data Cleaning
@@ -118,12 +117,12 @@ The following supervised learning algorithms were evaluated:
 - Logistic Regression
 - Gaussian Naive Bayes
 
-Performance evaluation considered:
+Evaluation metrics:
 
 - Accuracy
 - Precision
 - Recall
-- F1-Score
+- F1-score
 - ROC-AUC
 - Cross Validation
 
@@ -138,73 +137,51 @@ The best-performing model was **Logistic Regression**.
 | Accuracy | 0.73 |
 | ROC-AUC | 0.77 |
 | Cross Validation | 0.68 |
-| Recall | 0.79 |
 
-These results demonstrate that Machine Learning techniques can effectively support early identification of students at risk of academic failure and school dropout.
+The results demonstrate the potential of Machine Learning to support early identification of students at risk of academic failure.
 
 ---
 
-# Repository Structure
+# Repository Contents
 
 ```
 machine-learning-school-dropout/
 
-│
-├── data/
-│
 ├── images/
-│   ├── banner-project.jpeg
-│
-├── models/
-│
-├── notebooks/
+│   └── banner-project.jpeg
 │
 ├── paper/
-│   └── article.pdf
+│   ├── article.pdf
+│   └── project-case-study.pdf
 │
-├── results/
-│
-├── src/
-│
-├── .gitignore
-├── LICENSE
 ├── README.md
-└── requirements.txt
+├── LICENSE
+└── .gitignore
 ```
 
 ---
 
-# How to Run
+# Data Availability
 
-Clone the repository
+The original dataset and the complete implementation notebook are **not publicly available**.
 
-```bash
-git clone https://github.com/ValbertoFeitosa/machine-learning-school-dropout.git
-```
+They contain institutional academic records subject to privacy, ethical and institutional restrictions.
 
-Enter the project directory
+This repository provides:
 
-```bash
-cd machine-learning-school-dropout
-```
+- Project documentation
+- Methodological overview
+- Published scientific article
+- Project case study
+- Main experimental results
 
-Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-Launch Jupyter Notebook
-
-```bash
-jupyter notebook
-```
+Researchers interested in further information are welcome to contact the corresponding author.
 
 ---
 
 # Scientific Publication
 
-This repository is based on the following peer-reviewed paper:
+This repository is based on the peer-reviewed publication:
 
 **Machine Learning: An Application for School Dropout Prevention**
 
@@ -216,11 +193,19 @@ DOI:
 
 https://doi.org/10.33448/rsd-v14i6.49029
 
+### Documents
+
+📄 **Published Article**
+
+`paper/article.pdf`
+
+📘 **Project Case Study**
+
+`paper/project-case-study.pdf`
+
 ---
 
 # Citation
-
-If you use this repository in your research, please cite:
 
 ```bibtex
 @article{Pereira2025,
@@ -233,18 +218,6 @@ If you use this repository in your research, please cite:
   doi={10.33448/rsd-v14i6.49029}
 }
 ```
-
----
-
-# Future Improvements
-
-- Add new Machine Learning algorithms
-- Hyperparameter optimization
-- Explainable AI (SHAP/LIME)
-- Deep Learning models
-- Deployment using FastAPI
-- Interactive dashboard
-- Cloud deployment
 
 ---
 
