@@ -17,9 +17,9 @@
 
 This repository presents a Machine Learning study for predicting student failure in first-semester Mathematics as an early indicator of school dropout risk.
 
-The project applies data preprocessing, class balancing (SMOTE), feature selection and supervised learning algorithms to identify students at higher academic risk, supporting evidence-based educational decision making.
+The project applies data preprocessing, class balancing (SMOTE), feature selection and supervised learning algorithms to identify students at higher academic risk, supporting evidence-based educational decision-making.
 
-The repository documents a peer-reviewed scientific publication published in **Research, Society and Development (2025)**.
+This repository documents a peer-reviewed scientific publication published in **Research, Society and Development (2025)**.
 
 ---
 
@@ -117,7 +117,7 @@ The following supervised learning algorithms were evaluated:
 - Logistic Regression
 - Gaussian Naive Bayes
 
-Evaluation metrics:
+Performance was evaluated using:
 
 - Accuracy
 - Precision
@@ -138,13 +138,13 @@ The best-performing model was **Logistic Regression**.
 | ROC-AUC | 0.77 |
 | Cross Validation | 0.68 |
 
-The results demonstrate the potential of Machine Learning to support early identification of students at risk of academic failure.
+The results demonstrate the potential of Machine Learning to support the early identification of students at risk of academic failure.
 
 ---
 
 # Repository Contents
 
-```
+```text
 machine-learning-school-dropout/
 
 ├── images/
@@ -163,9 +163,7 @@ machine-learning-school-dropout/
 
 # Data Availability
 
-The original dataset and the complete implementation notebook are **not publicly available**.
-
-They contain institutional academic records subject to privacy, ethical and institutional restrictions.
+The original dataset and the complete implementation notebook are **not publicly available** because they contain institutional academic records subject to privacy, ethical and institutional restrictions.
 
 This repository provides:
 
@@ -175,33 +173,33 @@ This repository provides:
 - Project case study
 - Main experimental results
 
-Researchers interested in further information are welcome to contact the corresponding author.
+Researchers interested in additional information are welcome to contact the corresponding author.
 
 ---
 
 # Scientific Publication
 
-This repository is based on the peer-reviewed publication:
+This repository is based on the following peer-reviewed publication:
 
 **Machine Learning: An Application for School Dropout Prevention**
 
 Research, Society and Development
 
-Volume 14, Issue 6 (2025)
+**Volume 14, Issue 6 (2025)**
 
 DOI:
 
 https://doi.org/10.33448/rsd-v14i6.49029
 
-### Documents
+## Documents
 
 📄 **Published Article**
 
-`paper/article.pdf`
+[Read the article](paper/article.pdf)
 
 📘 **Project Case Study**
 
-`paper/project-case-study.pdf`
+[Open the project documentation](paper/project-case-study.pdf)
 
 ---
 
